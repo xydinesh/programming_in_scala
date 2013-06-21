@@ -1,0 +1,6 @@
+object Summer {
+  import ChecksumAccumulator.calculate
+  def main(args: Array[String]) {
+    args.foreach(a => println(a + " : " + calculate(a)))
+  }
+}

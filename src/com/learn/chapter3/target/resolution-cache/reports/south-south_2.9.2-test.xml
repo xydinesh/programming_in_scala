@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="south"
+		module="south_2.9.2"
+		revision="0.1"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
+		date="20130619164628"/>
+	<dependencies>
+		<module organisation="org.squeryl" name="squeryl_2.9.2">
+			<revision name="0.9.5-6" status="release" pubdate="20121221164815" resolver="public" artresolver="public" homepage="http://squeryl.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3796" time="0" location="/home/dweerapurage/.ivy2/cache/org.squeryl/squeryl_2.9.2/ivy-0.9.5-6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/squeryl/squeryl_2.9.2/0.9.5-6/squeryl_2.9.2-0.9.5-6.pom"/>
+				<caller organisation="south" name="south_2.9.2" conf="test, compile, runtime" rev="0.9.5-6" rev-constraint-default="0.9.5-6" rev-constraint-dynamic="0.9.5-6" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="squeryl_2.9.2" type="jar" ext="jar" status="no" details="" size="1704780" time="0" location="/home/dweerapurage/.ivy2/cache/org.squeryl/squeryl_2.9.2/jars/squeryl_2.9.2-0.9.5-6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/squeryl/squeryl_2.9.2/0.9.5-6/squeryl_2.9.2-0.9.5-6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scalap">
+			<revision name="2.9.2" status="release" pubdate="20120413083538" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="3">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2516" time="0" location="/home/dweerapurage/.ivy2/cache/org.scala-lang/scalap/ivy-2.9.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scalap/2.9.2/scalap-2.9.2.pom"/>
+				<caller organisation="org.squeryl" name="squeryl_2.9.2" conf="default, compile, runtime, master" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="0.9.5-6"/>
+				<artifacts>
+					<artifact name="scalap" type="jar" ext="jar" status="no" details="" size="842198" time="0" location="/home/dweerapurage/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.9.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scalap/2.9.2/scalap-2.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.9.2" status="release" pubdate="20120413083159" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="4">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2665" time="0" location="/home/dweerapurage/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.pom"/>
+				<caller organisation="org.scala-lang" name="scalap" conf="compile, runtime" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="2.9.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="postgresql" name="postgresql">
+			<revision name="8.4-701.jdbc4" status="release" pubdate="20091001192019" resolver="public" artresolver="public" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="5">
+				<license name="BSD License" url="http://jdbc.postgresql.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2349" time="0" location="/home/dweerapurage/.ivy2/cache/postgresql/postgresql/ivy-8.4-701.jdbc4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/postgresql/postgresql/8.4-701.jdbc4/postgresql-8.4-701.jdbc4.pom"/>
+				<caller organisation="south" name="south_2.9.2" conf="test, compile, runtime" rev="8.4-701.jdbc4" rev-constraint-default="8.4-701.jdbc4" rev-constraint-dynamic="8.4-701.jdbc4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="postgresql" type="jar" ext="jar" status="no" details="" size="510170" time="0" location="/home/dweerapurage/.ivy2/cache/postgresql/postgresql/jars/postgresql-8.4-701.jdbc4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/postgresql/postgresql/8.4-701.jdbc4/postgresql-8.4-701.jdbc4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="cglib" name="cglib-nodep">
+			<revision name="2.2" status="release" pubdate="20081201172832" resolver="public" artresolver="public" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="2">
+				<license name="ASF 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2499" time="0" location="/home/dweerapurage/.ivy2/cache/cglib/cglib-nodep/ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/cglib/cglib-nodep/2.2/cglib-nodep-2.2.pom"/>
+				<caller organisation="org.squeryl" name="squeryl_2.9.2" conf="default, compile, runtime, master" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="0.9.5-6"/>
+				<artifacts>
+					<artifact name="cglib-nodep" type="jar" ext="jar" status="no" details="" size="322362" time="0" location="/home/dweerapurage/.ivy2/cache/cglib/cglib-nodep/jars/cglib-nodep-2.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.9.2" status="release" pubdate="20120413082921" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2391" time="0" location="/home/dweerapurage/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.pom"/>
+				<caller organisation="org.squeryl" name="squeryl_2.9.2" conf="default, compile, runtime, master" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="0.9.5-6"/>
+				<caller organisation="south" name="south_2.9.2" conf="test, compile, runtime" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="0.1"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="2.9.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
