@@ -1,3 +1,3 @@
-generate ensime
 ensime
-exit
+ensime generate
+run
